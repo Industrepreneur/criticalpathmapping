@@ -1,0 +1,32 @@
+<md-dialog aria-label="Add New Part">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h1><span>Add New Part</span></h1>
+    </div>
+  </md-toolbar>
+
+  <md-content class="sticky-container">
+    <div class="dialog-content">
+      <form name="partForm" ng-submit="vm.submit()">
+        <md-input-container>
+          <label for="part__name">Part Name</label>
+          <input type="text" id="part__name" ng-model="vm.name" autofocus md-maxlength="50" required>
+          <div ng-messages="vm.name.$error">
+            <div ng-message="required">Part Name is required.</div>
+          </div>
+        </md-input-container>
+        <md-input-container>
+          <label for="part__description">Part Description</label>
+          <textarea id="part__description" ng-model="vm.description"></textarea>
+        </md-input-container>
+      </form>
+    </div>
+  </md-content>
+
+  <div class="md-actions" layout="row">
+    <md-button class="md-warn" ng-click="vm.cancel()">Cancel</md-button>
+    <md-button class="md-primary" ng-click="vm.submit()" ng-disabled="partForm.$invalid">Submit</md-button>
+  </div>
+
+</md-dialog>

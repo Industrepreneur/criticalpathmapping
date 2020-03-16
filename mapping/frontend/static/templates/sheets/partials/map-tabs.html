@@ -1,0 +1,7 @@
+<md-tabs md-selected="vm.selectedIndex" md-border-bottom="" md-no-disconnect>
+  <md-tab ng-repeat="tab in vm.tabs" label="{{tab.title}}">
+    <div layout="column">
+      <map-chart chart-type="{{tab.chartType}}" sheet="vm.sheet"></map-chart>
+    </div>
+  </md-tab>
+</md-tabs>

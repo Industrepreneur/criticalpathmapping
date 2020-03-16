@@ -1,0 +1,127 @@
+{% extends "account/_base.html" %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block body %}
+<script type="text/ng-template" id="error-messages"></script>
+
+<div ng-hide="vm.isLoggedIn" layout="row" style="margin-top: 15ex">
+  <div flex="33"></div>
+  <div flex layout="column">
+    <md-whiteframe flex class="box-container md-whiteframe-z2" layout="column" layout-margin>
+      <md-toolbar class="box-toolbar md-hue-3">
+        <h1 class="md-toolbar-tools">
+          <span class="md-flex" layout layout-fill layout-align="start center">Sign Up</span>
+        </h1>
+      </md-toolbar>
+      <md-content layout-padding>
+        <div>
+          <form class="signup" id="signup_form" name="signup_form" method="post" action="{% url 'account_signup' %}">
+            {% csrf_token %}
+            {{ form.non_field_errors }}
+            <div layout="column">
+              <md-input-container class="md-icon-float md-block">
+                <label for="signup__email">Email</label>
+                <md-icon md-font-icon="fa fa-lg fa-fw fa-envelope-o"></md-icon>
+                <input type="email" id="signup__email" name="email" autofocus required>
+              </md-input-container>
+              <div class="form-messages">
+                <div ng-messages="signup_form.email.$error"
+                    ng-if="signup_form.userMessage.$dirty"
+                    multiple md-auto-hide="false">
+                  <div ng-messages-include="error-messages"></div>
+                  <div ng-message="email">Valid email address required</div>
+                </div>
+                {% if form.email.errors %}
+                  {% for error in form.email.errors %}
+                    <div class="form-message">{{ error|escape }}</div>
+                  {% endfor %}
+                {% endif %}
+              </div>
+
+              <div layout="column">
+                <div layout="row">
+                  <md-input-container class="md-icon-float md-block">
+                    <label for="signup__password">Password</label>
+                    <md-icon md-font-icon="fa fa-lg fa-fw fa-lock"></md-icon>
+                    <input type="password" id="id_password1" name="password1" required minlength="6">
+                  </md-input-container>
+                  <md-input-container class="md-icon-float md-block">
+                    <label for="signup__password">Password Again</label>
+                    <md-icon md-font-icon="fa fa-lg fa-fw fa-unlock"></md-icon>
+                    <input type="password" id="signup__password2" name="password2" required minlength="6">
+                  </md-input-container>
+                </div>
+
+                <div ng-messages="signup_form.password1.$error" multiple md-auto-hide="false">
+                  <div ng-message="minlength">Pasword must be at least 6 characters</div>
+                </div>
+                {% if form.password1.errors %}
+                  {% for error in form.password1.errors %}
+                    <div>{{ error|escape }}</div>
+                  {% endfor %}
+                {% endif %}
+
+                <div ng-messages="signup_form.password2.$error" multiple md-auto-hide="false">
+                  <div ng-message="minlength">Pasword must be at least 6 characters</div>
+                </div>
+                {% if form.password2.errors %}
+                  {% for error in form.password2.errors %}
+                    <div>{{ error|escape }}</div>
+                  {% endfor %}
+                {% endif %}
+              </div>
+
+              <div layout="row">
+                {# form.password1.errors #}
+                {# form.password2.errors #}
+              </div>
+
+              <div layout="row">
+                <md-input-container class="md-icon-float md-block">
+                  <label for="signup__firstname">First Name</label>
+                  <md-icon md-font-icon="fa fa-lg fa-fw fa-user"></md-icon>
+                  <input type="text" id="signup__firstname" name="first_name" value="{{ form.first_name.value }}" required>
+                </md-input-container>
+                {% if form.first_name.errors %}
+                  {% for error in form.first_name.errors %}
+                    <div>{{ error|escape }}</div>
+                  {% endfor %}
+                {% endif %}
+
+                <md-input-container class="md-icon-float md-block">
+                  <label for="signup__lastname">Last Name</label>
+                  <input type="text" id="signup__lastname" name="last_name" value="{{ form.last_name.value }}" required>
+                </md-input-container>
+              </div>
+              {% if form.last_name.errors %}
+                {% for error in form.last_name.errors %}
+                  <div>{{ error|escape }}</div>
+                {% endfor %}
+              {% endif %}
+
+              <md-input-container class="md-icon-float md-block">
+                <label for="signup__company">Company Name</label>
+                <md-icon md-font-icon="fa fa-lg fa-fw fa-building"></md-icon>
+                <input type="text" id="signup__company" name="company" value="{{ form.company.value }}" required>
+              </md-input-container>
+              {% if form.company.errors %}
+                {% for error in form.company.errors %}
+                  <div>{{ error|escape }}</div>
+                {% endfor %}
+              {% endif %}
+
+            </div>
+            <div class="md-actions" layout="row">
+              <md-button type="submit" class="md-primary" ng-disabled="signupForm.$invalid">Sign Up</md-button>
+            </div>
+          </form>
+        </div>
+      </md-content>
+    </md-whiteframe>
+  </div>
+  <div flex="33"></div>
+</div>
+
+{% endblock %}

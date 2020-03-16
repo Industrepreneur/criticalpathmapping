@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="380.24814"
+   height="116.66007"
+   viewBox="0 0 380.24815 116.66007"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Stacked.svg"
+   inkscape:export-filename="C:\Users\Sean\OneDrive\Documents\FactoryConcepts\Logo\Criticalpathmappinglogo.large.png"
+   inkscape:export-xdpi="299.67395"
+   inkscape:export-ydpi="299.67395">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.2022893"
+     inkscape:cx="201.07283"
+     inkscape:cy="-66.279667"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="900"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="10"
+     fit-margin-left="20"
+     fit-margin-right="20"
+     fit-margin-bottom="10"
+     units="px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-18.546635,-66.933623)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:50.54555511px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="39.202545"
+       y="109.65468"
+       id="text4158"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4162"
+         x="39.202545"
+         y="109.65468"
+         dx="0"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:45.96208572px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Heavy';letter-spacing:-1.14905214px;fill:#000000;fill-opacity:1">CRITICAL PATH</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.54552841px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.86591"
+       y="147.91502"
+       id="text4158-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"><tspan
+         sodipodi:role="line"
+         id="tspan4182"
+         style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:45.96208572px;font-family:'Segoe UI';-inkscape-font-specification:'Segoe UI Light Italic';letter-spacing:24.7px;fill:#000000;fill-opacity:1"
+         x="38.86591"
+         y="147.91502">MAPPING</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3"
+     style="display:none"
+     transform="translate(-5.0462843,-1.7606807e-7)">
+    <g
+       id="g4181"
+       transform="matrix(1,0,0,1.3636359,-13.500351,-109.09709)">
+      <rect
+         y="115.94969"
+         x="40.571533"
+         height="12.93894"
+         width="208.19931"
+         id="rect4149"
+         style="opacity:0.98000004;fill:#c0392b;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="115.94969"
+         x="246.77084"
+         height="12.93894"
+         width="137.62328"
+         id="rect4149-2"
+         style="opacity:0.98000004;fill:#f39c12;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="115.94968"
+         x="384.31256"
+         height="12.93894"
+         width="204.08238"
+         id="rect4149-2-8"
+         style="opacity:0.98000004;fill:#27ae60;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline"
+     transform="translate(-5.0462843,-1.7606807e-7)">
+    <g
+       id="g4221"
+       transform="matrix(0.61739469,0,0,1,2.0225332,-46.933623)">
+      <rect
+         style="opacity:0.98000004;fill:#c0392b;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4212"
+         width="445.24707"
+         height="17.644003"
+         x="40.571533"
+         y="135.94969" />
+      <rect
+         style="opacity:0.98000004;fill:#f39c12;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4214"
+         width="71.915306"
+         height="17.644003"
+         x="482.15512"
+         y="135.94969" />
+      <rect
+         style="opacity:0.98000004;fill:#27ae60;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect4216"
+         width="36.901325"
+         height="17.644003"
+         x="551.49359"
+         y="135.94968" />
+    </g>
+  </g>
+</svg>

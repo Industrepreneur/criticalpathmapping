@@ -1,0 +1,368 @@
+[
+    {
+        "fields": {
+            "date_created": "2015-03-09T21:32:30.090Z",
+            "date_updated": "2015-03-09T21:32:30.090Z",
+            "is_active": true,
+            "name": "Factory Concepts",
+            "user_limit": 10
+        },
+        "model": "accounts.company",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-09T21:32:30.090Z",
+            "date_updated": "2015-03-09T21:32:30.090Z",
+            "is_active": true,
+            "name": "Widget Co.",
+            "user_limit": 10
+        },
+        "model": "accounts.company",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "company": 1,
+            "date_created": "2015-03-09T23:37:48.523Z",
+            "date_updated": null,
+            "email": "robin@robinbolton.com",
+            "first_name": "Robin",
+            "is_active": true,
+            "is_admin": true,
+            "is_manager": true,
+            "last_login": "2015-04-01T03:36:14.662Z",
+            "last_name": "Bolton",
+            "password": "bcrypt_sha256$$2a$12$lkAimtAbGtL9QRqq.ytAZuc2b07eW03IH62Akkb0AHIp2XMTcnNIq"
+        },
+        "model": "accounts.user",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "company": 1,
+            "date_created": "2015-03-10T03:02:33.570Z",
+            "date_updated": null,
+            "email": "factoryconcepts@gmail.com",
+            "first_name": "Sean",
+            "is_active": true,
+            "is_admin": true,
+            "is_manager": true,
+            "last_login": "2015-03-10T03:02:33.570Z",
+            "last_name": "Larson",
+            "password": "bcrypt_sha256$$2a$12$1CEwtBgq7HnX0keShL5HFehIH4gDcAoBC.VgHoad8wtS/aRLUFexW"
+        },
+        "model": "accounts.user",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-03-10T02:52:16.852Z",
+            "date_updated": null,
+            "email": "manager@widgetco.com",
+            "first_name": "WidgetCo",
+            "is_active": true,
+            "is_admin": false,
+            "is_manager": true,
+            "last_login": "2015-05-21T02:26:44.811Z",
+            "last_name": "Manager",
+            "password": "bcrypt_sha256$$2a$12$AU2ss3Aec0HL7MUW7oo4yupO4ih1lRjwD5uxpgwReN6rjlQJweGz6"
+        },
+        "model": "accounts.user",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-03-10T02:54:32.005Z",
+            "date_updated": null,
+            "email": "employee@widgetco.com",
+            "first_name": "WidgetCo",
+            "is_active": true,
+            "is_admin": false,
+            "is_manager": false,
+            "last_login": "2015-03-10T02:54:32.005Z",
+            "last_name": "Employee",
+            "password": "bcrypt_sha256$$2a$12$2UoYModf9wVus0jhfIfOtO4rR9rtjyS8Xqt.ML71NL6qh5AysbKPq"
+        },
+        "model": "accounts.user",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-03-31T19:29:07.163Z",
+            "date_updated": "2015-05-21T02:34:47.824Z",
+            "description": "WidgetCo. Period 2, 05:00 - 21:00, Monday - Friday",
+            "is_default": false,
+            "name": "Period 1"
+        },
+        "model": "accounts.workperiod",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-03-31T19:30:07.708Z",
+            "date_updated": "2015-05-21T02:35:01.990Z",
+            "description": "WidgetCo. Period 2, 05:00 - 14:00, Monday - Friday",
+            "is_default": false,
+            "name": "Period 2"
+        },
+        "model": "accounts.workperiod",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "company": 1,
+            "date_created": "2015-03-31T19:29:07.163Z",
+            "date_updated": "2015-03-31T19:30:52.989Z",
+            "description": "Factory Concepts standard work period.",
+            "is_default": false,
+            "name": "Standard"
+        },
+        "model": "accounts.workperiod",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:33.710Z",
+            "date_updated": "2015-05-21T02:29:12.510Z",
+            "day_of_week": 1,
+            "time_shift_ends": "21:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 1
+        },
+        "model": "accounts.workshift",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:51.989Z",
+            "date_updated": "2015-05-21T02:29:47.449Z",
+            "day_of_week": 2,
+            "time_shift_ends": "21:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 1
+        },
+        "model": "accounts.workshift",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:35:05.009Z",
+            "date_updated": "2015-05-21T02:29:47.450Z",
+            "day_of_week": 3,
+            "time_shift_ends": "21:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 1
+        },
+        "model": "accounts.workshift",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:35:19.486Z",
+            "date_updated": "2015-05-21T02:29:47.451Z",
+            "day_of_week": 4,
+            "time_shift_ends": "21:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 1
+        },
+        "model": "accounts.workshift",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:36:45.425Z",
+            "date_updated": "2015-05-21T02:29:47.452Z",
+            "day_of_week": 5,
+            "time_shift_ends": "21:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 1
+        },
+        "model": "accounts.workshift",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:33.710Z",
+            "date_updated": "2015-05-21T02:33:43.052Z",
+            "day_of_week": 1,
+            "time_shift_ends": "14:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 2
+        },
+        "model": "accounts.workshift",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:51.989Z",
+            "date_updated": "2015-05-21T02:33:43.054Z",
+            "day_of_week": 2,
+            "time_shift_ends": "14:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 2
+        },
+        "model": "accounts.workshift",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:35:05.009Z",
+            "date_updated": "2015-05-21T02:33:43.055Z",
+            "day_of_week": 3,
+            "time_shift_ends": "14:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 2
+        },
+        "model": "accounts.workshift",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:35:19.486Z",
+            "date_updated": "2015-05-21T02:33:43.056Z",
+            "day_of_week": 4,
+            "time_shift_ends": "14:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 2
+        },
+        "model": "accounts.workshift",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:36:45.425Z",
+            "date_updated": "2015-05-21T02:33:43.057Z",
+            "day_of_week": 5,
+            "time_shift_ends": "14:00:00",
+            "time_shift_starts": "05:00:00",
+            "work_period": 2
+        },
+        "model": "accounts.workshift",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:32:43.847Z",
+            "date_updated": "2015-03-31T19:32:43.847Z",
+            "day_of_week": 5,
+            "time_shift_ends": "12:00:00",
+            "time_shift_starts": "07:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:02.773Z",
+            "date_updated": "2015-03-31T19:34:15.585Z",
+            "day_of_week": 5,
+            "time_shift_ends": "17:00:00",
+            "time_shift_starts": "12:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:33.710Z",
+            "date_updated": "2015-03-31T19:33:33.710Z",
+            "day_of_week": 1,
+            "time_shift_ends": "12:00:00",
+            "time_shift_starts": "07:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:33:51.989Z",
+            "date_updated": "2015-03-31T19:34:45.803Z",
+            "day_of_week": 1,
+            "time_shift_ends": "17:00:00",
+            "time_shift_starts": "12:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:35:05.009Z",
+            "date_updated": "2015-03-31T19:35:38.461Z",
+            "day_of_week": 2,
+            "time_shift_ends": "12:00:00",
+            "time_shift_starts": "07:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:35:19.486Z",
+            "date_updated": "2015-03-31T19:35:19.486Z",
+            "day_of_week": 2,
+            "time_shift_ends": "17:00:00",
+            "time_shift_starts": "12:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:36:45.425Z",
+            "date_updated": "2015-03-31T19:36:45.425Z",
+            "day_of_week": 3,
+            "time_shift_ends": "12:00:00",
+            "time_shift_starts": "07:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:36:54.217Z",
+            "date_updated": "2015-03-31T19:36:54.217Z",
+            "day_of_week": 3,
+            "time_shift_ends": "17:00:00",
+            "time_shift_starts": "12:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:37:07.498Z",
+            "date_updated": "2015-03-31T19:37:07.498Z",
+            "day_of_week": 4,
+            "time_shift_ends": "12:00:00",
+            "time_shift_starts": "07:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "date_created": "2015-03-31T19:37:17.946Z",
+            "date_updated": "2015-03-31T19:37:17.946Z",
+            "day_of_week": 4,
+            "time_shift_ends": "17:00:00",
+            "time_shift_starts": "12:30:00",
+            "work_period": 4
+        },
+        "model": "accounts.workshift",
+        "pk": 36
+    }
+]

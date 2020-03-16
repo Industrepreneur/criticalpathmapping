@@ -1,0 +1,28 @@
+{% extends "account/_base.html" %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
+
+{% block body %}
+<div layout="row" style="margin-top: 15ex">
+  <div flex="33"></div>
+  <div flex layout="column">
+    <md-whiteframe flex class="box-container md-whiteframe-z2" layout="column" layout-margin>
+      <md-toolbar class="box-toolbar md-hue-3">
+        <h1 class="md-toolbar-tools">
+          <span class="md-flex" layout layout-fill layout-align="start center">
+            {% trans "Verify Your E-mail Address" %}
+          </span>
+        </h1>
+      </md-toolbar>
+      <md-content layout-padding>
+        <p>
+          We have sent an e-mail to you for verification. Follow the link provided to finalize the signup process.
+          If the email does not appear within the next few minutes you may want to check your Junk Mail folder.
+        </p>
+      </md-content>
+    </md-whiteframe>
+  </div>
+  <div flex="33"></div>
+</div>
+{% endblock %}

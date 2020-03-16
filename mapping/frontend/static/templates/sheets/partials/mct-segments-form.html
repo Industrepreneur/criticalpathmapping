@@ -1,0 +1,43 @@
+<form name="segmentEstimatesForm" layout="column">
+
+  <!-- <div layout="row">
+    <label>Release Date</label>
+    <input type="text" name="release_date" ng-model="vm.sheet.release_date" ui-mask="9999-99-99 99:99">
+  </div> -->
+
+  <div layout="row">
+    <div flex="65" layout="row" layout-padding>
+      <div flex>
+        <md-input-container>
+          <label>Raw Materials</label>
+          <input type="number" name="raw_materials_estimate" ng-model="vm.sheet.raw_materials_estimate" required min="0" max="999.99" step="0.1">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Logistics</label>
+          <input type="number" name="logistics_estimate" ng-model="vm.sheet.logistics_estimate" required min="0" max="999.99" step="0.1">
+        </md-input-container>
+      </div>
+
+      <div flex>
+        <md-input-container>
+          <label>Office</label>
+          <input type="number" name="office_estimate" ng-model="vm.sheet.office_estimate" required min="0" max="999.99" step="0.1">
+        </md-input-container>
+
+        <md-input-container>
+          <label>Finished Goods</label>
+          <input type="number" name="finished_goods_estimate" ng-model="vm.sheet.finished_goods_estimate" required min="0" max="999.99" step="0.1">
+        </md-input-container>
+      </div>
+    </div>
+
+    <div flex="35" layout="column" layout-align="start end" layout-padding>
+      <p style="font-size: 16px; font-weight: normal; margin-top: 0; margin-bottom: 0;">Manufacturing</p>
+      <p style="margin: 0;"><strong>{{vm.sheet.durationDaysActual | number:0}} days</strong></p>
+      <p style="font-size: 16px; font-weight: normal; margin-top: 30px; margin-bottom: 0;">Total</p>
+      <p style="margin: 0;"><strong>{{vm.sheet.totalDurationDaysActual | number:0}} days</strong></p>
+    </div>
+  </div>
+
+</form>

@@ -1,0 +1,33 @@
+{
+
+  "exclude": [
+    "(migrations/)",
+    "(settings/)",
+    "(__init__\\.py$)"
+  ],
+
+  "linters" : {
+
+    "filename": {
+      "type": "filename"
+    },
+
+    "flake8": {
+      "type": "flake8",
+      "include": "(\\.py$)",
+      "exclude": [
+        "(^exclude\\.py$)"
+      ],
+      "severity": {
+        "E901": "advice"
+      }
+    },
+
+    "spelling": {
+      "type": "spelling",
+      "include": "(\\.md$)"
+    }
+
+  }
+
+}

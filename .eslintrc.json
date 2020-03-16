@@ -1,0 +1,37 @@
+{
+  "plugins": [
+    "angular"
+  ],
+  "extends": "angular",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": false
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": [2, 2],
+    "linebreak-style": [2, "unix"],
+    "no-console": "warn",
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "quotes": [2, "single"],
+    "semi": [2, "always", { "omitLastInOneLineBlock": true }],
+    "angular/controller-name": [2, "/^(cpm){0,1}[A-Z][a-zA-Z0-9]*Controller$/"],
+    "angular/di": [0, "$inject"]
+  },
+  "globals": {
+    "angular": true
+  }
+}

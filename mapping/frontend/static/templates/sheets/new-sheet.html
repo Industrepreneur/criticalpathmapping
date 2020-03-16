@@ -1,0 +1,56 @@
+<md-dialog aria-label="Add New Sheet">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h1><span>Add New Sheet</span></h1>
+    </div>
+  </md-toolbar>
+
+  <md-content class="sticky-container">
+    <div class="dialog-content">
+      <form name="sheetForm" ng-submit="vm.submit()">
+
+        <md-input-container>
+          <label for="sheet__description">Sheet Description</label>
+          <textarea id="sheet__description" ng-model="vm.description" autofocus></textarea>
+        </md-input-container>
+
+        <md-input-container>
+          <label for="sheet__release_date">Release Date</label>
+          <input type="text" id="sheet__release_date" ng-model="vm.release_date" ui-mask="9999-99-99 99:99" required>
+        </md-input-container>
+
+        <div layout layout-sm="column">
+          <md-input-container>
+            <label for="sheet__raw_materials_estimate">Raw Materials</label>
+            <input type="number" id="sheet__raw_materials_estimate" ng-model="vm.raw_materials_estimate" step="0.1" min="0" max="9999">
+          </md-input-container>
+
+          <md-input-container>
+            <label for="sheet__logistics_estimate">Logistics</label>
+            <input type="number" id="sheet__logistics_estimate" ng-model="vm.logistics_estimate" step="0.1" min="0" max="999.99">
+          </md-input-container>
+        </div>
+
+        <div layout layout-sm="column">
+          <md-input-container>
+            <label for="sheet__office_estimate">Office</label>
+            <input type="number" id="sheet__office_estimate" ng-model="vm.office_estimate" step="0.1" min="0" max="999.99">
+          </md-input-container>
+
+          <md-input-container>
+            <label for="sheet__finished_goods_estimate">Finished Goods</label>
+            <input type="number" id="sheet__finished_goods_estimate" ng-model="vm.finished_goods_estimate" step="0.1" min="0" max="999.99">
+          </md-input-container>
+        </div>
+
+      </form>
+    </div>
+  </md-content>
+
+  <div class="md-actions" layout="row">
+    <md-button class="md-warn" ng-click="vm.cancel()">Cancel</md-button>
+    <md-button class="md-primary" ng-click="vm.submit()" ng-disabled="sheetForm.$invalid">Submit</md-button>
+  </div>
+
+</md-dialog>

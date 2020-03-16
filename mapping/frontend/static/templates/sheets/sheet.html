@@ -1,0 +1,18 @@
+<md-list-item class="md-2-line" layout="row" layout-padding>
+  <div class="md-list-item-text" ui-sref="sheets.detail({partId: sheet.part.id, sheetId: sheet.id})" flex layout="column">
+    <div class="row" layout="row" layout-align="start center">
+      <p flex layout layout-align="start end">Release:&nbsp;<strong>{{sheet.release_date | date:'yyyy-MM-dd HH:mm'}}</strong></p>
+      <p flex layout layout-align="center end">MCT:&nbsp;<strong>{{sheet.totalDurationDaysActual}} days</strong></p>
+      <p flex layout layout-align="end end">Value Add:&nbsp;<strong>{{(sheet.VA.percentDisplay || '0%')}}</strong></p>
+    </div>
+    <div class="row" layout="column" layout-fill flex>
+      <map-chart chart-type="summaryView" sheet="sheet" overlay-type="hidden"></map-chart>
+    </div>
+  </div>
+  <div layout="row" layout-align="end center" layout-padding>
+    <md-button class="md-icon-button" aria-label="Delete Sheet" ng-click="vm.showDeleteSheetDialog($event)">
+      <md-icon md-font-icon="fa fa-lg fa-fw fa-trash-o" alt="Delete Sheet"></md-icon>
+    </md-button>
+  </div>
+</md-list-item>
+<md-divider ng-if="!$parent.$last"></md-divider>

@@ -1,0 +1,10 @@
+<div class="row" layout="row" layout-fill>
+  <div flex="50" layout="column" layout-align="start start">
+    <span><strong>{{vm.sheet.description || "&nbsp;"}}</strong></span>
+    <span>{{vm.sheet.creator.full_name || "&nbsp;"}}</span>
+  </div>
+  <div flex="50" layout="column" layout-align="start end">
+    <span>#{{vm.sheet.id}}</span>
+    <span>{{vm.sheet.release_date | date:'yyyy-MM-dd HH:mm'}}</span>
+  </div>
+</div>

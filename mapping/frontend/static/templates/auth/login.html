@@ -1,0 +1,30 @@
+<md-dialog aria-label="Login Required">
+
+  <md-toolbar>
+    <div class="md-toolbar-tools">
+      <h1><span>Sign In</span></h1>
+    </div>
+  </md-toolbar>
+
+  <md-content class="sticky-container">
+    <div class="dialog-content">
+      <form name="loginForm" ng-submit="vm.login()">
+        <div layout="column">
+          <md-input-container>
+            <label for="login__email">Email</label>
+            <input type="email" id="login__email" ng-model="vm.email" placeholder="email@address.com" autofocus required>
+          </md-input-container>
+          <md-input-container>
+            <label for="login__password">Password</label>
+            <input type="password" id="login__password" ng-model="vm.password" placeholder="Your password" required>
+          </md-input-container>
+        </div>
+      </form>
+    </div>
+  </md-content>
+
+  <div class="md-actions" layout="row">
+    <md-button class="md-primary" ng-click="vm.login()" ng-disabled="loginForm.$invalid">Sign In</md-button>
+  </div>
+
+</md-dialog>

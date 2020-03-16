@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load common_tags pipeline staticfiles %}
+<html lang="en" ng-app="mapping" ng-strict-di="true">
+<head>
+  {% block meta_tags %}
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon-stripe.ico' %}"/>
+  <meta name="description" content="">
+
+  {% endblock %}
+  <title>{% block title %}Factory Concepts{% endblock %}</title>
+  {% stylesheet 'vendor' %}
+  {% stylesheet 'mapping' %}
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="ng-cloak" ng-controller="AppController as vm">
+  <div id="page-wrap">
+    <div id="page-header" layout="column">
+      <nav id="nav">
+        <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2><span><a ui-sref="home"><img src="{% static 'images/logo-header.png' %}" alt="Critical Path Mapping logo" width="308" height="32"/></a></span></h2>
+            <span flex></span>
+            {% if user.is_authenticated %}
+              <a ui-sref="parts.index">
+                <md-button>
+                  <md-icon md-font-icon="fa fa-lg fa-fw fa-tasks" aria-label="android"></md-icon>
+                  Parts
+                </md-button>
+              </a>
+              <md-menu>
+                <md-button ng-click="$mdOpenMenu()" aria-label="Open user control menu">
+                  <md-icon md-font-icon="fa fa-lg fa-fw fa-user"></md-icon>
+                  {{user.first_name}}
+                </md-button>
+                <md-menu-content width="4">
+                  {% if user.is_admin %}
+                    <md-menu-item>
+                      <md-button ng-click="vm.gotoBackend()">
+                        <md-icon md-font-icon="fa fa-lg fa-fw fa-wrench"></md-icon>
+                        <p>Site Admin</p>
+                      </md-button>
+                    </md-menu-item>
+                  {% endif %}
+                  {% if user.is_manager or user.is_admin %}
+                    <md-menu-item>
+                      <md-button ng-click="vm.gotoAdmin()">
+                        <md-icon md-font-icon="fa fa-lg fa-fw fa-gears"></md-icon>
+                        <p>Admin</p>
+                      </md-button>
+                    </md-menu-item>
+                  {% endif %}
+                  <md-menu-item>
+                    <md-button ng-click="vm.openUserGuide()">
+                      <md-icon md-font-icon="fa fa-lg fa-sw fa-book"></md-icon>
+                      <p>User Guide</p>
+                    </md-button>
+                  </md-menu-item>
+                  <md-menu-item>
+                    <md-button ng-click="vm.logout()">
+                      <md-icon md-font-icon="fa fa-lg fa-fw fa-sign-out"></md-icon>
+                      <p>Logout</p>
+                    </md-button>
+                  </md-menu-item>
+                </md-menu-content>
+              </md-menu>
+            {% else %}
+              <md-button ng-click="vm.openSignupPage()">
+                <md-icon md-font-icon="fa fa-lg fa-fw fa-plus"></md-icon>
+                Sign Up
+              </md-button>
+
+              <md-button ng-click="vm.showLoginDialog()">
+                <md-icon md-font-icon="fa fa-lg fa-fw fa-sign-in"></md-icon>
+                Sign In
+              </md-button>
+            {% endif %}
+          </div>
+        </md-toolbar>
+        <div class="row activity-status-indicator">
+          <md-progress-linear md-mode="indeterminate" ng-show="vm.saveInProgress"></md-progress-linear>
+        </div>
+      </nav>
+    </div> <!-- End #page-header -->
+
+    <div id="page-body" layout="column" layout-fill>
+      {% verbatim %}
+      <div ui-view></div>
+      {% endverbatim %}
+    </div> <!-- End #page-body -->
+
+    <div id="page-footer" layout="row" layout-align="center center" layout-padding>
+      <div flex>Copyright ©2014 - {% verbatim %}{{vm.date | date:'yyyy'}} Factory Concepts{% endverbatim %}</div>
+      <div flex class="text-right">{% app_version %}</div>
+    </div> <!-- End #page-footer -->
+
+  </div> <!-- End #page-wrap -->
+
+  {% javascript 'vendor' %}
+  {% javascript 'mapping' %}
+  {% if user.is_authenticated %}
+  <script>angular.module('mapping').constant("AUTHENTICATED", true)</script>
+  {% else %}
+  <script>angular.module('mapping').constant("AUTHENTICATED", false)</script>
+  {% endif %}
+</body>
+</html>

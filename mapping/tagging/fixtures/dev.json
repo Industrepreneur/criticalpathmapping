@@ -1,0 +1,704 @@
+[
+    {
+        "fields": {
+            "background_color": "rgba(39, 175, 96, 1)",
+            "date_created": "2015-04-13T16:50:59.632Z",
+            "date_updated": "2015-04-13T16:50:59.632Z",
+            "is_striped": false
+        },
+        "model": "tagging.chartstyle",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "background_color": "rgba(39, 175, 96, 1)",
+            "date_created": "2015-04-13T16:51:03.619Z",
+            "date_updated": "2015-04-13T16:57:56.647Z",
+            "is_striped": true
+        },
+        "model": "tagging.chartstyle",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "background_color": "rgba(41, 128, 185, 1)",
+            "date_created": "2015-04-13T16:51:24.969Z",
+            "date_updated": "2015-04-13T16:51:24.969Z",
+            "is_striped": false
+        },
+        "model": "tagging.chartstyle",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "background_color": "rgba(41, 128, 185, 1)",
+            "date_created": "2015-04-13T16:51:28.919Z",
+            "date_updated": "2015-04-13T16:51:28.919Z",
+            "is_striped": true
+        },
+        "model": "tagging.chartstyle",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "background_color": "rgba(142, 68, 173, 1)",
+            "date_created": "2015-04-13T16:51:40.308Z",
+            "date_updated": "2015-04-13T16:51:40.308Z",
+            "is_striped": false
+        },
+        "model": "tagging.chartstyle",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "background_color": "rgba(142, 68, 173, 1)",
+            "date_created": "2015-04-13T16:51:43.208Z",
+            "date_updated": "2015-04-13T16:51:43.208Z",
+            "is_striped": true
+        },
+        "model": "tagging.chartstyle",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "background_color": "rgba(243, 156, 18, 1)",
+            "date_created": "2015-04-13T16:51:58.537Z",
+            "date_updated": "2015-04-13T16:51:58.537Z",
+            "is_striped": true
+        },
+        "model": "tagging.chartstyle",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "background_color": "rgba(211, 84, 0, 1)",
+            "date_created": "2015-04-13T16:52:32.806Z",
+            "date_updated": "2015-04-13T16:52:32.806Z",
+            "is_striped": false
+        },
+        "model": "tagging.chartstyle",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "background_color": "rgba(211, 84, 0, 1)",
+            "date_created": "2015-04-13T16:52:37.532Z",
+            "date_updated": "2015-04-13T16:52:37.532Z",
+            "is_striped": true
+        },
+        "model": "tagging.chartstyle",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "background_color": "rgba(192, 57, 43, 1)",
+            "date_created": "2015-04-13T16:53:02.587Z",
+            "date_updated": "2015-04-13T16:53:02.587Z",
+            "is_striped": false
+        },
+        "model": "tagging.chartstyle",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "background_color": "rgba(192, 57, 43, 1)",
+            "date_created": "2015-04-13T16:53:07.178Z",
+            "date_updated": "2015-04-13T16:53:07.178Z",
+            "is_striped": true
+        },
+        "model": "tagging.chartstyle",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "background_color": "rgba(172, 51, 38, 1)",
+            "date_created": "2015-04-13T16:53:42.426Z",
+            "date_updated": "2015-04-13T16:56:37.464Z",
+            "is_striped": false
+        },
+        "model": "tagging.chartstyle",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-17T14:00:00Z",
+            "date_created": "2015-05-18T11:09:47.706Z",
+            "date_started": "2015-03-17T12:00:00Z",
+            "date_updated": "2015-05-18T11:29:28.110Z",
+            "description": "Mill Setup",
+            "operation_method": 1,
+            "operation_type": 5,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-17T19:00:00Z",
+            "date_created": "2015-05-18T11:11:26.923Z",
+            "date_started": "2015-03-17T14:00:00Z",
+            "date_updated": "2015-05-18T11:30:19.925Z",
+            "description": "Mill Process",
+            "operation_method": 1,
+            "operation_type": 1,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-20T20:00:00Z",
+            "date_created": "2015-05-18T11:12:59.772Z",
+            "date_started": "2015-03-20T19:00:00Z",
+            "date_updated": "2015-05-18T11:30:57.465Z",
+            "description": "Form Setup",
+            "operation_method": 2,
+            "operation_type": 5,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-20T20:45:00Z",
+            "date_created": "2015-05-18T11:13:10.150Z",
+            "date_started": "2015-03-20T20:00:00Z",
+            "date_updated": "2015-05-18T11:34:47.470Z",
+            "description": "Form Process",
+            "operation_method": 2,
+            "operation_type": 1,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-24T15:45:00Z",
+            "date_created": "2015-05-18T11:14:57.530Z",
+            "date_started": "2015-03-24T15:00:00Z",
+            "date_updated": "2015-05-18T11:36:03.652Z",
+            "description": "Mill Setup",
+            "operation_method": 1,
+            "operation_type": 5,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-25T15:00:00Z",
+            "date_created": "2015-05-18T11:15:58.289Z",
+            "date_started": "2015-03-24T15:45:00Z",
+            "date_updated": "2015-05-18T11:43:05.489Z",
+            "description": "Mill Process",
+            "operation_method": 1,
+            "operation_type": 1,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-25T20:00:00Z",
+            "date_created": "2015-05-18T11:17:01.685Z",
+            "date_started": "2015-03-25T19:00:00Z",
+            "date_updated": "2015-05-18T11:40:20.752Z",
+            "description": "Inspection",
+            "operation_method": 3,
+            "operation_type": 3,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 2
+        },
+        "model": "tagging.operation",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-27T03:00:00Z",
+            "date_created": "2015-05-18T11:18:59.302Z",
+            "date_started": "2015-03-26T23:00:00Z",
+            "date_updated": "2015-05-18T11:43:32.008Z",
+            "description": "Mill Setup",
+            "operation_method": 1,
+            "operation_type": 5,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-27T13:00:00Z",
+            "date_created": "2015-05-18T11:19:58.132Z",
+            "date_started": "2015-03-27T03:00:00Z",
+            "date_updated": "2015-05-18T11:43:55.556Z",
+            "description": "Mill Process",
+            "operation_method": 1,
+            "operation_type": 1,
+            "quantity_in": 1,
+            "quantity_out": 1,
+            "sheet": 1,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-17T14:00:00Z",
+            "date_created": "2015-05-18T12:49:25.663Z",
+            "date_started": "2015-03-17T12:00:00Z",
+            "date_updated": "2015-05-18T12:51:18.147Z",
+            "description": null,
+            "operation_method": 1,
+            "operation_type": 5,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-17T19:00:00Z",
+            "date_created": "2015-05-18T12:52:05.473Z",
+            "date_started": "2015-03-17T14:00:00Z",
+            "date_updated": "2015-05-18T12:52:47.435Z",
+            "description": null,
+            "operation_method": 1,
+            "operation_type": 1,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-20T20:00:00Z",
+            "date_created": "2015-05-18T12:53:31.295Z",
+            "date_started": "2015-03-20T19:00:00Z",
+            "date_updated": "2015-05-18T12:55:30.229Z",
+            "description": null,
+            "operation_method": 2,
+            "operation_type": 5,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-20T20:45:00Z",
+            "date_created": "2015-05-18T12:56:34.235Z",
+            "date_started": "2015-03-20T20:00:00Z",
+            "date_updated": "2015-05-18T12:56:34.235Z",
+            "description": null,
+            "operation_method": 2,
+            "operation_type": 1,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-24T15:45:00Z",
+            "date_created": "2015-05-18T12:57:39.658Z",
+            "date_started": "2015-03-24T15:00:00Z",
+            "date_updated": "2015-05-18T12:58:08.627Z",
+            "description": null,
+            "operation_method": 1,
+            "operation_type": 5,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-25T15:00:00Z",
+            "date_created": "2015-05-18T12:59:03.948Z",
+            "date_started": "2015-03-24T15:45:00Z",
+            "date_updated": "2015-05-18T12:59:31.381Z",
+            "description": null,
+            "operation_method": 1,
+            "operation_type": 1,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-27T03:00:00Z",
+            "date_created": "2015-05-18T13:05:02.850Z",
+            "date_started": "2015-03-26T03:00:00Z",
+            "date_updated": "2015-05-18T13:05:02.850Z",
+            "description": null,
+            "operation_method": 1,
+            "operation_type": 1,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-27T21:00:00Z",
+            "date_created": "2015-05-18T13:06:04.822Z",
+            "date_started": "2015-03-27T12:00:00Z",
+            "date_updated": "2015-05-18T13:06:04.822Z",
+            "description": null,
+            "operation_method": 3,
+            "operation_type": 2,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 2
+        },
+        "model": "tagging.operation",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "date_completed": "2015-03-31T16:00:00Z",
+            "date_created": "2015-05-18T13:06:55.744Z",
+            "date_started": "2015-03-30T20:00:00Z",
+            "date_updated": "2015-05-18T13:06:55.744Z",
+            "description": null,
+            "operation_method": 4,
+            "operation_type": 2,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 2
+        },
+        "model": "tagging.operation",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "date_completed": "2015-04-06T19:00:00Z",
+            "date_created": "2015-05-18T13:08:24.219Z",
+            "date_started": "2015-03-31T16:00:00Z",
+            "date_updated": "2015-05-18T13:08:24.219Z",
+            "description": null,
+            "operation_method": 5,
+            "operation_type": 7,
+            "quantity_in": 10,
+            "quantity_out": 10,
+            "sheet": 2,
+            "work_period": 1
+        },
+        "model": "tagging.operation",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-04-01T06:45:51.132Z",
+            "date_updated": "2015-04-01T06:45:51.132Z",
+            "description": null,
+            "name": "Mill: 3-Axis",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-04-01T06:46:04.215Z",
+            "date_updated": "2015-04-01T06:46:04.215Z",
+            "description": null,
+            "name": "Press Brake",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-04-01T06:46:36.135Z",
+            "date_updated": "2015-04-01T06:46:36.135Z",
+            "description": null,
+            "name": "Anodize",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-04-01T06:46:40.776Z",
+            "date_updated": "2015-04-01T06:46:40.776Z",
+            "description": null,
+            "name": "Heat Treat",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "company": 2,
+            "date_created": "2015-04-01T06:46:50.556Z",
+            "date_updated": "2015-04-01T06:46:50.556Z",
+            "description": null,
+            "name": "Outside Processing",
+            "use_work_period": false
+        },
+        "model": "tagging.operationmethod",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "company": 1,
+            "date_created": null,
+            "date_updated": null,
+            "description": null,
+            "name": "Mill: 2-Axis",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "company": 1,
+            "date_created": null,
+            "date_updated": null,
+            "description": null,
+            "name": "Lathe",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "company": 1,
+            "date_created": null,
+            "date_updated": null,
+            "description": null,
+            "name": "GD&T",
+            "use_work_period": true
+        },
+        "model": "tagging.operationmethod",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "chart_style": 1,
+            "date_created": "2015-03-23T23:46:10.637Z",
+            "date_updated": "2015-04-13T17:08:15.097Z",
+            "description": "",
+            "name": "Processing, Piece",
+            "value_type": "VA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "chart_style": 1,
+            "date_created": "2015-03-23T23:46:58.375Z",
+            "date_updated": "2015-04-13T17:11:11.847Z",
+            "description": "",
+            "name": "Processing, Batch",
+            "value_type": "VA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "chart_style": 7,
+            "date_created": "2015-03-23T23:47:15.775Z",
+            "date_updated": "2015-04-13T17:12:05.157Z",
+            "description": "",
+            "name": "Inspection, Piece",
+            "value_type": "RNVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "chart_style": 7,
+            "date_created": "2015-03-23T23:47:35.585Z",
+            "date_updated": "2015-04-13T17:12:30.109Z",
+            "description": "",
+            "name": "Inspection, Batch",
+            "value_type": "RNVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "chart_style": 3,
+            "date_created": "2015-03-23T23:47:53.462Z",
+            "date_updated": "2015-05-18T11:57:16.909Z",
+            "description": "",
+            "name": "Setup",
+            "value_type": "RNVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "chart_style": 8,
+            "date_created": "2015-03-23T23:47:58.713Z",
+            "date_updated": "2015-04-13T17:13:32.140Z",
+            "description": "",
+            "name": "Rework",
+            "value_type": "RNVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "chart_style": 5,
+            "date_created": "2015-03-23T23:48:08.057Z",
+            "date_updated": "2015-04-13T17:14:09.980Z",
+            "description": "",
+            "name": "Outside Processing",
+            "value_type": "RNVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "chart_style": 10,
+            "date_created": "2015-03-23T23:48:20.602Z",
+            "date_updated": "2015-04-13T17:15:25.800Z",
+            "description": "",
+            "name": "Wait-for-Resource",
+            "value_type": "NVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "chart_style": 11,
+            "date_created": "2015-03-23T23:48:29.157Z",
+            "date_updated": "2015-04-13T17:16:00.498Z",
+            "description": "",
+            "name": "Wait-for-Lot",
+            "value_type": "NVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "chart_style": 12,
+            "date_created": "2015-03-23T23:48:33.686Z",
+            "date_updated": "2015-04-13T17:16:38.039Z",
+            "description": "",
+            "name": "Off Hours",
+            "value_type": "NVA"
+        },
+        "model": "tagging.operationtype",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "creator": 3,
+            "date_created": "2015-03-10T04:51:40.469Z",
+            "date_updated": "2015-03-10T04:51:40.469Z",
+            "description": "Description for Flange #2644",
+            "name": "Flange #2644"
+        },
+        "model": "tagging.part",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "creator": 3,
+            "date_created": "2015-05-16T10:57:52.504Z",
+            "date_updated": "2015-05-18T10:57:52.505Z",
+            "description": "Test Case #1",
+            "finished_goods_estimate": "0.00",
+            "logistics_estimate": "0.00",
+            "office_estimate": "0.00",
+            "part": 1,
+            "raw_materials_estimate": "0.00",
+            "release_date": "2015-03-16T12:00:00Z"
+        },
+        "model": "tagging.sheet",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "creator": 3,
+            "date_created": "2015-05-16T12:47:03.035Z",
+            "date_updated": "2015-05-18T12:47:03.035Z",
+            "description": "Test Case #2",
+            "finished_goods_estimate": "0.00",
+            "logistics_estimate": "0.00",
+            "office_estimate": "0.00",
+            "part": 1,
+            "raw_materials_estimate": "0.00",
+            "release_date": "2015-03-16T12:00:00Z"
+        },
+        "model": "tagging.sheet",
+        "pk": 2
+    }
+]

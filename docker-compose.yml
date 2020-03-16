@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+
+  web:
+    build: .
+    depends_on:
+      - db
+    links:
+      - db:postgres
+    ports:
+      - "80:8080"
+    volumes:
+      - .:/app-local
+    environment:
+      - APP_ENV=dev
+      # - DATABASE_URL=postgres://postgres:postgres@192.168.99.100/postgres
+      - SECRET_KEY=+%ur!*snaw7z0no@7*id9@%1logahwu_mc&97neubbxcr#9p%m
+    hostname: local.criticalpathmapping.com
+    domainname: criticalpathmapping.com
+    working_dir: /app-local

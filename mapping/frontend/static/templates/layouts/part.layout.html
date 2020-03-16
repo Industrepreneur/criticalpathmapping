@@ -1,0 +1,39 @@
+<div class="row" layout="column">
+  <md-content class="md-padding" style="background-color: #FFA500; color: #fff;">
+    <div class="row" layout="row" layout-fill>
+      <div flex="50" layout="column" layout-align="start start">
+        <span><strong>{{vm.part.name}}</strong></span>
+        <span>{{vm.part.creator.full_name}}</span>
+      </div>
+      <div flex="50" layout="column" layout-align="start end">
+        <span>#{{vm.part.id}}</span>
+        <span>{{vm.part.date_created | date:'yyyy-MM-dd HH:mm'}}</span>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 1em;">
+      <span>{{vm.part.description}}</span>
+    </div>
+  </md-content>
+</div>
+
+<div class="row" layout="column" layout-margin>
+  <md-whiteframe class="md-capsule">
+    <md-toolbar class="md-hue-3">
+      <h1 class="md-toolbar-tools">
+        <span class="md-flex" layout layout-fill layout-align="start center">Sheets</span>
+        <md-button class="md-icon-button" aria-label="New Sheet" ng-click="vm.showNewSheetDialog($event)">
+          <md-icon md-font-icon="fa fa-lg fa-fw fa-plus" alt="New Sheet"></md-icon>
+          <md-tooltip>New Sheet</md-tooltip>
+        </md-button>
+      </h1>
+    </md-toolbar>
+    <md-content>
+      <md-list ng-show="vm.sheets && vm.sheets.length">
+        <sheet sheet="sheet" ng-repeat="sheet in vm.sheets | orderBy:'-date_created'"></sheet>
+      </md-list>
+      <div layout layout-padding ng-hide="vm.sheets && vm.sheets.length">
+        <em>No sheets have been added.</em>
+      </div>
+    </md-content>
+  </md-whiteframe>
+</div>

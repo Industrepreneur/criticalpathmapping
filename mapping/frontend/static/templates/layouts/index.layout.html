@@ -1,0 +1,37 @@
+<div ng-hide="vm.isLoggedIn" layout="row" style="margin-top: 15ex">
+  <div flex="33"></div>
+  <div flex layout="column">
+    <md-whiteframe flex class="box-container md-whiteframe-z2" layout="column" layout-margin>
+      <md-toolbar class="box-toolbar md-hue-3">
+        <h1 class="md-toolbar-tools">
+          <span class="md-flex" layout layout-fill layout-align="start center">Please Sign In</span>
+        </h1>
+      </md-toolbar>
+      <md-content layout-padding>
+        <div>
+          <form name="loginForm" ng-submit="vm.login()">
+            <div layout="column">
+              <md-input-container class="md-icon-float md-block">
+                <label for="login__email">Email</label>
+                <md-icon md-font-icon="fa fa-lg fa-fw fa-envelope-o"></md-icon>
+                <input type="email" id="login__email" ng-model="vm.email" autofocus required>
+              </md-input-container>
+              <md-input-container class="md-icon-float md-block">
+                <label for="login__password">Password</label>
+                <md-icon md-font-icon="fa fa-lg fa-fw fa-lock"></md-icon>
+                <input type="password" id="login__password" ng-model="vm.password" required>
+              </md-input-container>
+            </div>
+            <div class="md-actions" layout="row">
+              <md-button type="submit" class="md-primary" ng-disabled="loginForm.$invalid">Sign In</md-button>
+            </div>
+          </form>
+        </div>
+      </md-content>
+    </md-whiteframe>
+    <div layout layout-align="center center">
+      <p>Not a member yet? <a href="/accounts/signup/" ng-click="vm.openSignupPage()">Sign up for a free 90-day trial</a></p>
+    </div>
+  </div>
+  <div flex="33"></div>
+</div>

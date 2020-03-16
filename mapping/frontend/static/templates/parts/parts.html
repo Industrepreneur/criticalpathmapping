@@ -1,0 +1,19 @@
+<md-whiteframe class="md-capsule" layout="column">
+  <md-toolbar class="md-accent">
+    <h1 class="md-toolbar-tools">
+      <span class="md-flex" layout layout-fill layout-align="start center">Parts</span>
+      <md-button class="md-icon-button" aria-label="New Part" ng-click="vm.showNewPartDialog($event)">
+        <md-icon md-font-icon="fa fa-lg fa-fw fa-plus" alt="New Part"></md-icon>
+        <md-tooltip>New Part</md-tooltip>
+      </md-button>
+    </h1>
+  </md-toolbar>
+  <md-content>
+    <md-list>
+      <part part="part" ng-repeat="part in parts | orderBy:'-date_created'"></part>
+    </md-list>
+    <div layout layout-padding ng-hide="parts && parts.length">
+      <em>No parts have been added.</em>
+    </div>
+  </md-content>
+</md-whiteframe>

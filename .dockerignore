@@ -1,0 +1,17 @@
+*.sublime-project
+*.sublime-workspace
+.dockerignore
+.git
+.gitattribute
+.gitignore
+.project
+.pydevproject
+.vagrant
+assets
+docker-compose.yml
+fabfile
+gulpfile.coffee
+node_modules
+README.md
+scripts
+Vagrantfile

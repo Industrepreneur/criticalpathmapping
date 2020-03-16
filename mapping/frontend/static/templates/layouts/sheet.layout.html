@@ -1,0 +1,72 @@
+<div class="row" layout="column">
+  <md-content ui-view="sheet-form" class="md-padding" style="background-color: #FFA500; color: #fff;"></md-content>
+</div>
+
+<div class="row" layout="column" layout-gt-sm="row">
+  <md-whiteframe flex class="box-container md-whiteframe-z2" layout="column" layout-margin>
+    <md-toolbar class="box-toolbar md-hue-3">
+      <h1 class="md-toolbar-tools">
+        <span layout layout-fill layout-align="start center">MCT Calculations</span>
+      </h1>
+    </md-toolbar>
+    <md-content class="box-content" ui-view="mct-segments-form"></md-content>
+  </md-whiteframe>
+
+  <md-whiteframe flex class="box-container md-whiteframe-z2" layout="column" layout-margin>
+    <md-toolbar class="box-toolbar md-hue-3">
+      <h1 class="md-toolbar-tools">
+        <span class="md-flex" layout layout-fill layout-align="start center">MCT Summary</span>
+      </h1>
+    </md-toolbar>
+    <md-content class="box-content" layout="row" layout-align="center center" layout-padding>
+      <div flex layout="column" layout-align="center center">
+        <span>By Operation Type</span>
+        <pie-chart chart-type="operationType" sheet="vm.sheet"></pie-chart>
+      </div>
+      <div flex layout="column" layout-align="center center">
+        <span>By Value Type</span>
+        <pie-chart chart-type="valueType" sheet="vm.sheet"></pie-chart>
+      </div>
+    </md-content>
+  </md-whiteframe>
+</div>
+
+<md-whiteframe flex class="box-container box-no-toolbar box-no-bottom-radius md-whiteframe-z1" layout="column" layout-margin>
+<!--   <md-tabs md-selected="vm.selectedIndex" md-border-bottom="" md-no-disconnect>
+  <md-tab ng-repeat="tab in vm.tabs" label="{{tab.title}}">
+    <div layout="column">
+      <map-chart chart-type="{{tab.chartType}}" sheet="vm.sheet"></map-chart>
+    </div>
+  </md-tab>
+</md-tabs> -->
+
+  <!-- <md-content class="box-content md-hue-3" ui-view="map-tabs" layout="column" layout-fill></md-content> -->
+
+  <md-content class="box-content" layout="column" layout-fill>
+    <md-tabs md-selected="vm.selectedIndex" md-dynamic-height md-border-bottom>
+      <md-tab label="Detail View">
+        <div layout="column">
+          <map-chart chart-type="detailView" sheet="vm.sheet"></map-chart>
+        </div>
+      </md-tab>
+
+      <md-tab label="Summary View">
+        <div layout="column">
+          <map-chart chart-type="summaryView" sheet="vm.sheet"></map-chart>
+        </div>
+      </md-tab>
+
+      <md-tab label="Shop View">
+        <div layout="column">
+          <map-chart chart-type="shopView" sheet="vm.sheet"></map-chart>
+        </div>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</md-whiteframe>
+
+<div layout="row">
+  <md-whiteframe flex class="box-container box-no-toolbar md-whiteframe-z0" layout="column" layout-margin>
+    <md-content class="box-content" ui-view="operations-grid"></md-content>
+  </md-whiteframe>
+</div>
